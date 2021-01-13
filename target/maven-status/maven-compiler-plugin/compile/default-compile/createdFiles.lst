@@ -4,6 +4,7 @@ com\hieuminh\service\serviceImpl\AccountService.class
 com\hieuminh\dao\daoImpl\DepartmentDao.class
 com\hieuminh\model\AccountModel.class
 com\hieuminh\service\serviceImpl\DepartmentService.class
+com\hieuminh\mapper\DepartmentMapper.class
 com\hieuminh\service\serviceImpl\StaffService.class
 com\hieuminh\controller\admin\api\DepartmentApi.class
 com\hieuminh\model\StaffModel.class
@@ -11,14 +12,18 @@ com\hieuminh\service\IStaffService.class
 com\hieuminh\controller\admin\HomeController.class
 com\hieuminh\dao\IStaffDao.class
 com\hieuminh\dao\daoImpl\AbstractDao.class
+com\hieuminh\mapper\AccountMapper.class
 com\hieuminh\dao\IAccountDao.class
+com\hieuminh\mapper\RowMapper.class
 com\hieuminh\controller\web\DepartmentController.class
 com\hieuminh\dao\daoImpl\AccountDao.class
+com\hieuminh\utils\FormUtil.class
 com\hieuminh\controller\web\HomeController.class
 com\hieuminh\service\IAccountService.class
+com\hieuminh\mapper\StaffMapper.class
 com\hieuminh\dao\IDepartmentDao.class
+com\hieuminh\controller\Error\ErrorController.class
 com\hieuminh\dao\daoImpl\StaffDao.class
-web.class
 com\hieuminh\model\AbstractModel.class
 com\hieuminh\dao\GenericDao.class
 com\hieuminh\model\DepartmentModel.class

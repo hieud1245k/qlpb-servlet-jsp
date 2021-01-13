@@ -1,12 +1,12 @@
-<%@ page language="java" contentType="text/html"; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@include file="/common/taglib.jsp" %>
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
 		<style type="text/css">
 			#chenanh {
-				background-image: url(http://localhost:81/php/17N11_NguyenMinhHieu17T2/haivan.jpg);
+				background-image: url(<c:url value='/template/admin/image/haivan.jpg' />);
 				color: white;
 			}
 		</style>
@@ -14,12 +14,12 @@
 		<title>Quản lý phòng ban</title>
 		<meta charset="utf-8">
 		<frameset border=2 rows="68,*,50">
-			<frame src="trangchu1.php" />
+			<frame src=<c:url value='/common/admin/header.jsp' /> />
 			<frameset cols="18%,*">
-				<frame name='tuychon' src='tuychon1.php' />
-				<frame id=chenanh name='noidung' />
+				<frame name='tuychon' src=<c:url value='/common/admin/option.jsp' /> />
+				<frame id=chenanh name='noidung' src="" />
 			</frameset>
-			<frame  src=south.php/>
+			<frame src=<c:url value='/common/footer.jsp' /> />
 			<noframes> Trình duyệt không hỗ trợ Frame</noframes>
 		</frameset>
 		</div>

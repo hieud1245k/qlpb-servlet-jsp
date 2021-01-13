@@ -6,7 +6,7 @@
 	<head>
 		<style type="text/css">
 			#chenanh {
-				background-image: url(http://localhost:81/php/17N11_NguyenMinhHieu17T2/haivan.jpg);
+				background-image: url(<c:url value='/template/admin/image/haivan.jpg' />);
 				color: white;
 			}
 		</style>
