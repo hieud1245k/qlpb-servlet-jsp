@@ -50,6 +50,12 @@ public class StaffDao extends AbstractDao<StaffModel> implements IStaffDao {
 		StringBuilder sql = new StringBuilder("UPDATE nhanvien SET Hoten=?, IDPB=?,Diachi=? WHERE IDNV=?"); 
 		update(sql.toString(), model.getFullName(), model.getIdPB(), model.getAddress(), model.getId());
 	}
+
+	@Override
+	public List<StaffModel> findByIDNVOrFullName(String searchData) {
+		StringBuilder sql = new StringBuilder("SELECT * FROM nhanvien WHERE IDNV like '%" + searchData + "%' or Hoten like '%" + searchData + "%'");
+		return query(sql.toString(), new StaffMapper());
+	}
 	
 	
 

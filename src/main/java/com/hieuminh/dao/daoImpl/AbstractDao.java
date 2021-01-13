@@ -19,10 +19,10 @@ public class AbstractDao<T> implements GenericDao<T> {
 	
 	public Connection getConnection() {
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			String url = "jdbc:mysql://localhost:3306/quanlyphongban";
-			String user = "root";
-			String password = "851644";
+			Class.forName("org.postgresql.Driver");
+			String url = "jdbc:postgresql://ec2-54-170-109-0.eu-west-1.compute.amazonaws.com:5432/dc64gsdb5msq26";
+			String user = "bgznhzctynergd";
+			String password = "3e617c6afb9116b893e305cf4408b302240ab257e5a4d83e518882cc764d5f39";
 			return DriverManager.getConnection(url,user,password);
 		} catch (ClassNotFoundException e) {
 			System.out.println(e);

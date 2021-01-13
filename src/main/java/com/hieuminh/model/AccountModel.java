@@ -1,9 +1,10 @@
 package com.hieuminh.model;
 
-public class AccountModel extends AbstractModel<AccountModel> {
+public class AccountModel {
+	private String id;
 	private String username;
 	private String password;
-	
+
 	public String getUsername() {
 		return username;
 	}
@@ -20,4 +21,11 @@ public class AccountModel extends AbstractModel<AccountModel> {
 		this.password = password;
 	}
 
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
 }

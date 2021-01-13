@@ -23,14 +23,17 @@
 		<th>Diachi</th>
 		</tr>
 		<%
+			request.setCharacterEncoding("utf-8");
 			if(request.getParameter("txtnv")!=null) {
-				StaffModel model = new StaffDao().findOne(request.getParameter("txtnv"));
-				if(model == null) {
+				List<StaffModel> list = new StaffDao().findByIDNVOrFullName(request.getParameter("txtnv"));
+				if(list == null) {
 					response.sendRedirect("search.jsp");
 				} else {
-						out.print(
-								"<tr><td>" + model.getId() + "</td><td>" + model.getFullName() 
-								+ "</td><td>"+model.getIdPB()+"</td><td>"+model.getAddress()+"</td></tr>");
+						for(StaffModel model : list) {
+							out.print(
+									"<tr><td>" + model.getId() + "</td><td>" + model.getFullName() 
+									+ "</td><td>"+model.getIdPB()+"</td><td>"+model.getAddress()+"</td></tr>");
+						}
 				}
 			}
 		%>

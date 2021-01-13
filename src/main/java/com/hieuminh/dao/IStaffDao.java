@@ -11,4 +11,5 @@ public interface IStaffDao extends GenericDao<StaffModel> {
 	boolean save(StaffModel model);
 	void delete(String id);
 	void update(StaffModel model);
+	List<StaffModel> findByIDNVOrFullName(String searchData);
 }

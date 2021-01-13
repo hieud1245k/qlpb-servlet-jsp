@@ -1,6 +1,7 @@
 package com.hieuminh.model;
 
 public class StaffModel extends AbstractModel<StaffModel> {
+	private String id;
 	private String fullName;
 	private String address;
 	private String idPB;
@@ -22,5 +23,10 @@ public class StaffModel extends AbstractModel<StaffModel> {
 	public void setIdPB(String idPB) {
 		this.idPB = idPB;
 	}
-	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 }

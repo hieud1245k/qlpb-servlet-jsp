@@ -10,12 +10,8 @@
 		<tr>
 			<form action="search_result.jsp" method="post">
 				<tr>
-					<td align=left>IDNV</td>
+					<td align=left>IDNV or Họ tên</td>
 					<td><input type=text name=txtnv></td>
-				</tr>
-				<tr>
-					<td align=left>Họ tên</td>
-					<td><input type=text name=txtht></td>
 				</tr>
 				<tr>
 					<td align=center colspan=2><input type=submit name="submit"
